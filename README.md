@@ -1,21 +1,24 @@
 # SHA256_cracker
-- This Project takes input of hash for first argument and File location as second argument.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Modes:
- -v,--verbose
- -m,--multifast
-Example Usage For Multi Fast mode: 
-Type 1 --> ./sha256_cracker e2c587ac5155e215da971f07fb1aba71788ef2fa423a7efb251267419e146521 /usr/share/wordlists/rockyou.txt -m 
-Type 2 --> ./sha256_cracker ebf13de02b7406fd14c97ec3d136e6b36a27b53dd327602e7ace6912ccbccfa9 /usr/share/wordlists/rockyou.txt --multifast 
-Type 3 --> ./sha256_cracker path/to/the/hashes.txt /usr/share/wordlists/rockyou.txt -m
-Type 4 --> ./sha256_cracker path/to/the/hashes.txt /usr/share/wordlists/rockyou.txt
-Likewise for Verbose mode:
-Type 1 --> ./sha256_cracker e2c587ac5155e215da971f07fb1aba71788ef2fa423a7efb251267419e146521 /usr/share/wordlists/rockyou.txt -v 
-Type 2 --> ./sha256_cracker ebf13de02b7406fd14c97ec3d136e6b36a27b53dd327602e7ace6912ccbccfa9 /usr/share/wordlists/rockyou.txt --verbose 
-Type 3 --> ./sha256_cracker path/to/the/hashes.txt /usr/share/wordlists/rockyou.txt -v 
+This project takes input of a hash as the first argument and a file location as the second argument.
 
-**Note: Multi Fast mode is significantly faster than Verbose, thus choosing Multi Fast mode would be a wise choice. Also if no modes were specified then Multi Fast mode will be choosen automatically**
-___________________________________________________________________________________________________________________________________________________________________________
+## Modes
+- `-v`, `--verbose`
+- `-m`, `--multifast`
+
+### Example Usage for Multi Fast Mode:
+1. `./sha256_cracker e2c587ac5155e215da971f07fb1aba71788ef2fa423a7efb251267419e146521 /usr/share/wordlists/rockyou.txt -m`
+2. `./sha256_cracker ebf13de02b7406fd14c97ec3d136e6b36a27b53dd327602e7ace6912ccbccfa9 /usr/share/wordlists/rockyou.txt --multifast`
+3. `./sha256_cracker path/to/the/hashes.txt /usr/share/wordlists/rockyou.txt -m`
+4. `./sha256_cracker path/to/the/hashes.txt /usr/share/wordlists/rockyou.txt`
+
+### Example Usage for Verbose Mode:
+1. `./sha256_cracker e2c587ac5155e215da971f07fb1aba71788ef2fa423a7efb251267419e146521 /usr/share/wordlists/rockyou.txt -v`
+2. `./sha256_cracker ebf13de02b7406fd14c97ec3d136e6b36a27b53dd327602e7ace6912ccbccfa9 /usr/share/wordlists/rockyou.txt --verbose`
+3. `./sha256_cracker path/to/the/hashes.txt /usr/share/wordlists/rockyou.txt -v`
+
+**Note:** Multi Fast mode is significantly faster than Verbose mode. Thus, choosing Multi Fast mode is recommended. If no modes are specified, Multi Fast mode will be selected automatically.
+
+---
 ### Usage for Linux Binary
 - Download the latest version Binary from here:- https://github.com/apocalypsecracker/SHA256_cracker/releases/latest
 - Give executable permissions to the binary:
@@ -24,7 +27,7 @@ chmod +x sha256_cracker
 ```
 - then, run :- `./sha256_cracker <hash> <Path_To_The_wordlist> <Mode>`
 
--   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+---
 - **Placing into the executable path(Optional)**
 
 * I know always changing into the directory where sha256_cracker lives and executing it, is a pain in the ass. Don't worry I have a solution for you, Do the following steps carefully:
