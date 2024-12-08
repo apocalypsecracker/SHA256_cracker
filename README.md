@@ -1,6 +1,6 @@
 # SHA256_cracker
-This Project takes input of hash for first argument and File location as second argument.
-
+- This Project takes input of hash for first argument and File location as second argument.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Modes:
  -v,--verbose
  -m,--multifast
