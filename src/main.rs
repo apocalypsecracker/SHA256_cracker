@@ -50,7 +50,18 @@ fn main() {
                 "Multi Fast".blue()
             ),
         };
+
         let req_hash = argue[1].trim().to_string(); // Input hash or path to hash file
+
+        if req_hash.contains(".txt") && mode_arg == "-v" || mode_arg == "--verbose" {
+            println!(
+                "{} Failed: Verbose cannot be performed when declaring text file.",
+                "[x]".red()
+            );
+            println!("{}","Usage For Verbose mode:\n Linux --> ./sha256_cracker <hash> <path/to/wordlist> -m \n Windows --> ./sha256_cracker.exe <hash> <path/to/wordlist> -m".blue());
+            exit(4);
+        }
+
         let pass_file_loc = &argue[2]; // Path to wordlist file
 
         // Determine if input is a hash file or a single hash
@@ -69,7 +80,7 @@ fn main() {
         let mut read_error_count = 0; // Counter for ignored lines due to errors
 
         println!(
-            "{} Specified wordlist path: {}\n",
+            "{} Specified wordlist: {}\n",
             "[+]".blue(),
             pass_file_loc.blue()
         );
@@ -144,7 +155,7 @@ fn main() {
             // If the hash was not cracked, print a failure message
             if !hash_cracked {
                 println!(
-                    "{} Failed to crack hash: {} | Total Failed attempts {}\n",
+                    "{} Failed to crack hash: {} | Total Failed attempts: {}\n",
                     "[✖]".red(),
                     hash.red(),
                     attempt_count
