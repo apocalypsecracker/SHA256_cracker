@@ -1,7 +1,7 @@
 # SHA256_cracker
 This is a CLI tool build to crack hashes at lighting speed with minimal effort.
 
-From the version 2.2.1 and above, Modes option are introduced for more versatility. This gave access to Normal(-n) and Verbose(-v) modes, Eventually modes are improved to be more versaile from version 3.3.3 where Normal mode completely replaced with Multifast(-m) which gave it ability to read hashes from a text file and crack those automatically one by one using specified wordlist. If you are using a older version please be wary.
+From the version 2.2.1 and above, Modes option are introduced for more versatility. This gave access to Normal(-n) and Verbose(-v) modes, Eventually modes are improved to be more versatile from version 3.3.3 where Normal mode completely replaced with Multifast(-m) which gave it ability to read hashes from a text file and crack those automatically one by one using specified wordlist. If you are using a older version please be wary.
 
 ## Modes
 - `-v`, `--verbose`
