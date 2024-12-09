@@ -39,7 +39,7 @@ chmod +x sha256_cracker
 sudo mv sha256_cracker /usr/local/bin
 
 ```
-* That's all you've made it, Now you can execute sha256_cracker cracker anywhere from the Terminal Emulator like this:
+* That's all you've made it, Now you can execute sha256_cracker anywhere from the Terminal Emulator like this:
 ```
 sha256_cracker
 ```
