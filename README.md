@@ -1,5 +1,7 @@
 # SHA256_cracker
-This project takes input of a hash as the first argument and a file location as the second argument.
+This is a CLI tool build to crack hashes at lighting speed with minimal effort.
+
+From the version 2.2.1 and above, Modes option are introduced for more versatility. This gave access to Normal(-n) and Verbose(-v) modes, Eventually modes are improved to be more versaile from version 3.3.3 where Normal mode completely replaced with Multifast(-m) which gave it ability to read hashes from a text file and crack those automatically one by one using specified wordlist. If you are using a older version please be wary.
 
 ## Modes
 - `-v`, `--verbose`
@@ -20,7 +22,7 @@ This project takes input of a hash as the first argument and a file location as 
 
 ---
 ### Usage for Linux Binary
-- Download the latest version Binary from here:- https://github.com/apocalypsecracker/SHA256_cracker/releases/latest
+- Download the latest version of Linux Executable Binary from here:- https://github.com/apocalypsecracker/SHA256_cracker/releases/latest
 - Give executable permissions to the binary:
 ```
 chmod +x sha256_cracker
@@ -43,10 +45,10 @@ sha256_cracker
 ```
 ___________________________________________________________________________________________________________________________________________________________________________
 ### Usage for Windows executable
-- Download the latest version Binary from here:- https://github.com/apocalypsecracker/SHA256_cracker/releases/latest
+- Download the latest version of Windows-x86 executable from here:- https://github.com/apocalypsecracker/SHA256_cracker/releases/latest
 - Open Command Prompt or Powershell:
 - Now go to the path where sha256_cracker.exe located at or Open cmd from the path
-- then, run :- `./sha256_cracker.exe <hash> <Path_To_The_wordlist> <Mode>`
+- then, run :- `./sha256_cracker.exe <hash> <Path_To_The_wordlist> <Mode>` or simply `sha256_cracker.exe <hash> <Path_To_The_wordlist> <Mode>`
 ___________________________________________________________________________________________________________________________________________________________________________
 ### Usage for Source
 - Get into the directory of the project(eg: `cd sha256_cracker`)
