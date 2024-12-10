@@ -1,7 +1,7 @@
 # SHA256_cracker
 This is a CLI tool build to crack hashes at lighting speed with minimal effort.
 
-From the version 2.2.1 and above, Modes option are introduced for more versatility. This gave access to Normal(-n) and Verbose(-v) modes, Eventually modes are improved to be more versatile from version 3.3.3 where Normal mode completely replaced with Multifast(-m) which gave it ability to read hashes from a text file and crack those automatically one by one using specified wordlist. If you are using a older version please be wary.
+From the version 2.2.1 and above, Modes option are introduced for more versatility. This gave access to Normal(-n) and Verbose(-v) modes, Eventually modes are improved to be more versatile from version 3.3.3 where Normal mode completely replaced with Multifast(-m) which gave it ability to read hashes from a text file and crack those automatically one by one using specified wordlist. If you are using a older versions please be wary.
 
 ## Modes
 - `-v`, `--verbose`
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________________________________________________________________________
 ### Creator Answered Questions
 **Which should I choose, Binary or Source?**
-- In my opinion Choosing binary would be better because it is much easier to use and less likely to get in to issue. **Binaries are much more faster.** Building from source is different and much more complicated, There are also prerequesite for building from source like cargo need to be installed. However if you can manage technical things in building and your confident that you can troubleshoot any issues and also if you want new updated version with new features and fixes (Note:might also have bugs too) then this should be your choice  
+- In my opinion Choosing binary would be better because it is much easier to use and less likely to get in to an issue. **Binaries are much more faster.** Building from source is different and much more complicated, There are also prerequesite for building from source like cargo need to be installed. However if you can manage technical things in building and your confident that you can troubleshoot any issues and also if you want new updated version with new features and fixes (Note:might also have bugs too) then this should be your choice  
 
 **What are ignored words?**
 - While reading a wordlist and it's contents some words may contain unknown or complicated structure of words and symbols in a way where it cannot be converted to sha256 hash. Those words will be ignored and moved to next. 
